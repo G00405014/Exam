@@ -30,7 +30,7 @@ public class Info {
     }
 
     public String getShift() {
-        return shift;
+        return Shift;
     }
 
     public void setShift(String shift) { Shift = shift;}
@@ -43,4 +43,13 @@ public class Info {
         Age = age;
     }
 
+    @Override
+    public String toString() {
+        return "Info{" +
+                "name='" + name + '\'' +
+                ", Gender='" + Gender + '\'' +
+                ", Age='" + Age + '\'' +
+                ", Shift='" + Shift + '\'' +
+                '}';
+    }
 }
